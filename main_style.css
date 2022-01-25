@@ -1,0 +1,83 @@
+.moviechart
+{
+	background-color: rgb(247, 247, 247);
+	padding : 0 10%;
+}
+
+.moviechart > .head
+{
+	padding-left: 15px;
+}
+
+.moviechart h3
+{
+	display: inline;
+}
+
+.moviechart .poster
+{
+	height: 240px;
+	border-radius: 10px;
+}
+
+.movie
+{
+	display: inline-block;
+	margin: 0 15px;
+	text-align: center;
+}
+
+.poster_wrap
+{
+	position: relative;
+}
+.poster_wrap > .gradient
+{
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.85));
+}
+.poster_wrap > .num
+{
+	position: absolute;
+	z-index: 3;
+	color: rgb(247, 247, 247);
+	left: 5%;
+	bottom: -16px;
+	font: italic 400 50px "Noto Sans KR";
+}
+
+.screentype
+{
+	position: absolute;
+	top: 83%;
+	right: 3%;
+	z-index: 4;
+	height: 100%;
+	width: 100%;
+	text-align: right;
+}
+
+.screentype > img
+{
+	border : solid rgb(206, 206, 206) 1px;
+	border-radius: 3px;
+	margin: 0.5%;
+	padding: 0.5% 0;
+	height: 8px;
+}
+
+.age
+{
+	position: absolute;
+	top: 3%;
+	right: 2%;
+	text-align: right;
+	z-index: 4;
+	height: 100%;
+	width: 100%;
+}
