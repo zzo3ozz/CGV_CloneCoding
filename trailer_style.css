@@ -1,0 +1,45 @@
+.trailer
+{
+	positon: relateive;
+	background-color: black;
+	width: 100%;
+	text-align: center;
+}
+
+.videotext
+{
+	top: 50%;
+	left: 2%;
+	z-index: 3;
+	position: absolute;
+	color: white;
+	text-align: left;
+}
+
+video
+{
+	height: 100%;
+	width: 100%;
+	transform:scale(1.35);
+}
+
+.video_wrap
+{
+	height: 400px;
+	width: 850px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 15%;
+}
+
+.video_wrap > .trailer_gradient
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-image: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.25) 75%, #000 100%);
+	z-index: 3;
+}
+
+
