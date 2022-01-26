@@ -1,36 +1,98 @@
-.moviechart
+.MC_Ex
 {
-	background-color: rgb(247, 247, 247);
-	padding : 0 10%;
+	background-color: rgb(246, 246, 246);
+	text-align: center;
+	width: 100%;
 }
 
-.moviechart > .head
+.contents
 {
-	padding-left: 15px;
+	display: inline-block;
+	margin: 0 3%;
+	width: 980px;
+	text-align: left;
+/*	border: solid black 1px;*/
 }
 
-.moviechart h3
+.EVENT, .special, .store, .notice
 {
-	display: inline;
+	text-align: center;
+	width: 100%;
 }
+
+.moviechart > .list
+{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 8%;
+}
+
+.head
+{
+	margin-top: 8%;
+	display: inline-block;
+	width: 100%;
+	font: 700 25px "Noto Sans KR";
+	color: rgb(34, 34, 34);
+	margin-bottom: 2%;
+/*	border: solid black 1px;*/
+}
+
+.MC_Ex .menu
+{
+	color: rgb(102, 102, 102);
+	font: 500 25px "Noto Sans KR";
+}
+
+.bar
+{
+	border-right: solid rgb(178, 178, 178) 1px;
+	height: 13px;
+	display: inline-block;
+	margin: 0 10px 4px 10px;
+}
+
+.show_all_wrap
+{
+	display: inline-block;
+	float: right;
+}
+.show_all
+{
+	padding: 0.3em 0 0.3em 1em;
+	color: black;
+	border-radius: 15px;
+	border: solid rgb(178, 178, 178) 1px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.next
+{
+	height: 15px;
+	filter: opacity(1) drop-shadow(0 0 0 black);
+	margin-bottom: 0.2em;
+	margin-right: 0.3em;
+}
+
 
 .moviechart .poster
 {
 	height: 240px;
+	width: 170px;
 	border-radius: 10px;
 }
 
 .movie
 {
 	display: inline-block;
-	margin: 0 15px;
-	text-align: center;
 }
 
 .poster_wrap
 {
 	position: relative;
 }
+
 .poster_wrap > .gradient
 {
 	position: absolute;
@@ -41,6 +103,7 @@
 	border-radius: 10px;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.09) 35%, rgba(0, 0, 0, 0.85));
 }
+
 .poster_wrap > .num
 {
 	position: absolute;
@@ -80,4 +143,110 @@
 	z-index: 4;
 	height: 100%;
 	width: 100%;
+}
+
+.title
+{
+	font: 500 18px "Noto Sans KR";
+	color: rgb(34, 34, 34);
+	margin: 0.5em 0;
+}
+
+.movie .title
+{
+	text-align: center;
+}
+
+.info
+{
+	font-size: 14px;
+}
+.space
+{
+	display: inline-block;
+}
+
+.MC_Ex .space
+{
+	width: 26px;
+}
+
+.list
+{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	/*border: solid black 1px;*/
+}
+
+.EVENT  .card
+{
+	display: inline-block;
+}
+
+.card img
+{
+	height: 210px;
+	width: 310px;
+	border-radius: 10px;
+}
+
+.EVENT .space
+{
+	width: 18px;
+}
+
+#s_photo
+{
+	display: inline-block;
+	width: 50%;
+	height: 250px;
+	margin-right: 4%;
+/*	border: solid black 1px;*/
+}
+
+#s_photo img
+{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+
+#s_info
+{
+	position: absolute;
+	display: inline-block;
+	width: 45%;
+	height: 250px;
+/*	border: solid black 1px;*/
+}
+
+.s_type
+{
+	border-bottom: solid rgb(229, 229, 229) 1px;
+	width: 100%;
+	height: 25%;
+}
+
+#s_type_top
+{
+	border-top: solid rgb(229, 229, 229) 1px;
+}
+.s_type > .title
+{
+	display: inline-block;
+	margin: 4% 0 4% 5%;
+/*	border: solid black 1px;*/
+}
+
+.tag
+{
+	display: inline-block;
+	float: right;
+	margin: 4.5% 4% 0 0;
+	background-color: rgb(246, 246, 246);
+	padding: 0.3em 0.7em;
+	border-radius: 5px;
+	font-size: 13.5px;
 }
