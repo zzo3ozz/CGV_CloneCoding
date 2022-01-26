@@ -6,7 +6,9 @@
 		<link rel="shortcut icon" type="image/x-icon" herf="https://img.cgv.co.kr/theater_img/favicon.ico" >
 		<title> 영화 그 이상의 감동. CGV</title>
 		<link rel="stylesheet" type="text/css" href="trailer_style.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="main_style.css">
+		<link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/webfont.css" />
+    	<link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/reset.css" />
 	</head>
 
 	<body>
@@ -26,68 +28,200 @@
 						<span class = movie_title>
 							355<br>
 						</span>
+						<br>
 						<span class = movie_text>
 							월드클래스 에이전트 TEAM 355<br>
 							2월, 그들이 움직인다!
 						</span>
 					</div>
-					<div> <!-- 비디오 컨트롤러--> </div>
+					<div class="controler"> <!-- 비디오 컨트롤러-->
+						<a class="info_button" href="#none">상세보기 &nbsp; ▷</a>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section><!--무비차트/상영예정작 section-->	
-			<div> <!-- 무비차트, 상영예정작 텍스트 div-->
-				
-			</div>
-			<div class="moviechart"><!-- 무비차트 div-->
-				<div class="chart_name">
-					<h3>무비차트</h3>
-					<h3>상영예정작</h3>
+		<section class="MC_Ex"><!--무비차트/상영예정작 section-->	
+			<div class="contents">
+				<div class="head">
+						<a class="menu" href="#none">무비차트</a>
+						<div class="bar"></div> <!-- 구분선 -->
+						<a class="menu" href="#none">상영예정작</a>
+						<div class="show_all_wrap">
+							<a class="show_all" href="#none">전체보기 &nbsp; <span><img class="next" src="https://i.imgur.com/LJWCpux.png" alt="img"></span></a>
+						</div>
 				</div>
-				<div class="movie"> <!-- 1위-->
-					<div class = "poster_wrap"> <!-- 포스터 영역-->
-						<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85561/85561_320.jpg" alt="해적-도깨비 깃발">
-					</div>
-					<div> <!-- 텍스트 영역-->
-						<strong>해적-도깨비 깃발</strong><br>
-						<span>
-							<img src="https://img.cgv.co.kr/R2014/images/common/egg/eggGoldeneggPreegg.png" alt="PreEgg" height="15px" width="15px">
-							 98%
-						</span>
-						<span>예매율 23.2%</span>
+				<div class="moviechart"><!-- 무비차트 div-->
+					<div class="list">
+						<div class="movie"> <!-- 1위-->
+							<div class="poster_wrap"> <!-- 포스터 영역-->
+								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85561/85561_320.jpg" alt="해적-도깨비 깃발">
+								<div class="gradient"></div> <!-- 그라디언트 -->
+								<p class="num"> 1 </p> <!-- 순위 -->
+								<div class="age"> <!-- 관람가 -->
+									<img src="https://img.cgv.co.kr/R2014/images/common/flag/age/grade-12.png" alt="12세 이상세" height="20px">
+								</div>
+								<div class = "screentype"> <!-- 스크린타입 -->
+									<img src="https://img.cgv.co.kr/R2014/images/common/logo/imax_white.png" alt="imax">
+									<br>
+									<img src="https://img.cgv.co.kr/R2014/images/common/logo/forDX_white.png" alt="forDX">
+								</div>
+							</div>
+							<div> <!-- 텍스트 영역-->
+								<p class="title">해적-도깨비 깃발</p>
+								<p class="info">
+									<img src="https://img.cgv.co.kr/R2014/images/common/egg/eggGoldenegggreat.png" alt="PreEgg" height="15px" width="15px">
+									 98% &nbsp;&nbsp; 예매율 23.2%
+								</p>
+							</div>
+						</div>
+						<div class="space"></div><!-- 간격 -->
+						<div class="movie"> <!-- 2위-->
+							<div class="poster_wrap"> <!-- 포스터 영역-->
+								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85291/85291_320.jpg" alt="킹메이커">
+								<div class="gradient"></div> <!-- 그라디언트 -->
+								<p class="num"> 2 </p> <!-- 순위 -->
+							</div>
+							<div> <!-- 텍스트 영역-->
+								<p class="title">킹메이커</p>
+								<p style="text-align: left;">
+									<img src="https://img.cgv.co.kr/R2014/images/common/egg/eggGoldeneggPreegg.png" alt="PreEgg" height="15px" width="15px">
+									 99% &nbsp;&nbsp; 예매율 24.4%
+								</p>
+							</div>
+						</div>
+						<div class="space"></div><!-- 간격 -->
+						<div class="movie"> <!-- 3위-->
+							<div class="poster_wrap"> <!-- 포스터 영역-->
+								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85291/85291_320.jpg" alt="킹메이커">
+								<div class="gradient"></div> <!-- 그라디언트 -->
+								<p class="num"> 3 </p> <!-- 순위 -->
+							</div>
+							<div> <!-- 텍스트 영역-->
+								<p class="title">킹메이커</p>
+								<p class="info">
+									<img src="https://img.cgv.co.kr/R2014/images/common/egg/eggGoldeneggPreegg.png" alt="PreEgg" height="15px" width="15px">
+									 99% &nbsp;&nbsp; 예매율 24.4%
+								</p>
+							</div>
+						</div>
+						<div class="space"></div><!-- 간격 -->
+						<div class="movie"> <!-- 4위-->
+							<div class="poster_wrap"> <!-- 포스터 영역-->
+								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85291/85291_320.jpg" alt="킹메이커">
+								<div class="gradient"></div> <!-- 그라디언트 -->
+								<p class="num"> 4 </p> <!-- 순위 -->
+							</div>
+							<div> <!-- 텍스트 영역-->
+								<p class="title">킹메이커</p>
+								<p class="info">
+									<img src="https://img.cgv.co.kr/R2014/images/common/egg/eggGoldeneggPreegg.png" alt="PreEgg" height="15px" width="15px">
+									 99% &nbsp;&nbsp; 예매율 24.4%
+								</p>
+							</div>
+						</div>
+						<div class="space"></div><!-- 간격 -->
+						<div class="movie"> <!-- 5위-->
+							<div class="poster_wrap"> <!-- 포스터 영역-->
+								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85291/85291_320.jpg" alt="킹메이커">
+								<div class="gradient"></div> <!-- 그라디언트 -->
+								<p class="num"> 5 </p> <!-- 순위 -->
+							</div>
+							<div> <!-- 텍스트 영역-->
+								<p class="title">킹메이커</p>
+								<p class="info">
+									<img src="https://img.cgv.co.kr/R2014/images/common/egg/eggGoldeneggPreegg.png" alt="PreEgg" height="15px" width="15px">
+									 99% &nbsp;&nbsp; 예매율 24.4%
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="movie"> <!-- 2위-->
-					<div class = "poster_wrap"> <!-- 포스터 영역-->
-						<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85291/85291_320.jpg" alt="킹메이커">
-					</div>
-					<div> <!-- 텍스트 영역-->
-						<strong>킹메이커</strong><br>
-						<span>
-							<img src="https://img.cgv.co.kr/R2014/images/common/egg/eggGoldeneggPreegg.png" alt="PreEgg" height="15px" width="15px">
-							 99%
-						</span>
-						<span>예매율 24.4%</span>
-					</div>
+
+				<div><!--상영예정작 div-->			
 				</div>
-			</div>
-
-			<div><!--상영예정작 div-->			
-			</div>
-
-			<div><!--EVENT div -->		
-			</div>
-
-			<div><!--특별관 div-->		
-			</div>
-
-			<div><!--영화관람권/기프트카드/콤보 div-->		
-			</div>
-
-			<div><!--공지사항 div-->		
 			</div>
 		</section>
+
+		<section class="EVENT"><!--EVENT section -->
+			<div class="contents">
+				<div class="head">
+					<span> EVENT</span>
+					<div class="show_all_wrap">
+							<a class="show_all" href="#none">전체보기 &nbsp; <span><img class="next" src="https://i.imgur.com/LJWCpux.png" alt="img"></span></a>
+					</div>
+				</div>
+				<div class="list">
+					<div class="card">
+						<a href="#none"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/33902/16430866115440.jpg" alt="event"></a>
+						<p class="title">신년 맞이! [CGV 2022 챌린지]</p>
+						<p class="info"> 2022.01.25~2022.02.13</p>
+					</div>
+					<div class="space"></div>
+					<div class="card">
+						<a href="#none"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/33839/16425473374760.jpg" alt="event"></a>
+						<p class="title">[CGV NFT 플레이 포스터] No.1 킹메…</p>
+						<p class="info"> 2022.01.19~2022.02.27</p>
+					</div>
+					<div class="space"></div>
+					<div class="card">
+						<a href="#none"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/33809/16415341565330.jpg" alt="event"></a>
+						<p class="title">PEAKERS 클라이밍짐 오픈</p>
+						<p class="info"> 2022.01.07~2022.01.31</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="special"><!--특별관 section-->
+			<div class="contents">
+				<div class="head">
+					<span> 특별관</span>
+					<div class="show_all_wrap">
+							<a class="show_all" href="#none">전체보기 &nbsp; <span><img class="next" src="https://i.imgur.com/LJWCpux.png" alt="img"></span></a>
+					</div>
+				</div>
+				<div class="list">
+					<div id="s_photo">
+						<span><a href="#none"><img src="https://img.cgv.co.kr//Front/Main/2021/1209/16390080561620.png" alt="theater_photo"></a></span>
+					</div>
+					<div id="s_info">
+						<a class="type_wrap" href="#none">
+							<div id="s_type_top" class="s_type">
+								<p class="title">SUITE CINEMA</p>
+								<p class="tag">#호텔 컨셉의 프리미엄관</p>
+							</div>
+						</a>
+						<a class="type_wrap" href="#none">
+							<div class="s_type">
+								<p class="title">SKY BOX</p>
+								<p class="tag">#Premium #Private</p>
+							</div>
+						</a>
+						<a class="type_wrap" href="#none">
+							<div class="s_type">
+								<p class="title">4DX</p>
+								<p class="tag">#모션시트 #오감체험</p>
+							</div>
+						</a>
+						<a class="type_wrap" href="#none">
+							<div class="s_type">
+								<p class="title">CINE de CHEF</p>
+								<p class="tag">#쉐프가 있는 영화관</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="store"><!--영화관람권/기프트카드/콤보 section-->	
+		</section>
+
+		<sectoin class="notice"><!--공지사항 section-->		
+		</section>
+		
 
 		<footer></footer>
 	</body>
