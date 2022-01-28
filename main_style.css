@@ -94,10 +94,6 @@
 	width: 170px
 }
 
-.poster_wrap:hover ~ .poster
-{
-	z-index: 5;
-}
 
 .poster_wrap > .gradient
 {
@@ -507,4 +503,54 @@
 {
 	text-align: center;
 	background-image: linear-gradient(to top, rgba(254, 164, 67, 1.0) 75.5%, rgba(255,255,255,1) 24.5%) ;
+}
+
+#float
+{
+	position: fixed;
+	bottom: 80px;
+	right: 0;
+	z-index: 10;
+}
+
+#goto_top img
+{
+	height: 21px;
+}
+
+#goto_top .top_wrap
+{
+	text-align: center;
+	box-sizing: border-box;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	border: solid black 1px;
+	background-color: rgba(255, 255, 255, 1.0);
+	line-height: 45px;
+	box-shadow:1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+#goto_top
+{
+	float: right;
+}
+
+#goto_book
+{
+	float: left;
+	margin-right: 10px;
+}
+
+#goto_book .book_wrap
+{
+	text-align: center;
+	height: 50px;
+	width: 150px;
+	border-radius: 50px;
+	background-image:linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+	color: white;
+	font: 500 16px "Noto Sans KR";
+	line-height: 50px;
+	box-shadow:1px 3px 6px 0 rgba(0, 0, 0, 0.3);
 }
