@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name = "author" content = "한서영">
-		<link rel="shortcut icon" type="image/x-icon" herf="https://img.cgv.co.kr/theater_img/favicon.ico" >
+		<link rel="shortcut icon" type="image/x-icon" href="https://img.cgv.co.kr/theater_img/favicon.ico" >
 		<title> 영화 그 이상의 감동. CGV</title>
 		<link rel="stylesheet" type="text/css" href="trailer_style.css">
 		<link rel="stylesheet" type="text/css" href="main_style.css">
@@ -35,7 +35,8 @@
 						</span>
 					</div>
 					<div class="controler"> <!-- 비디오 컨트롤러-->
-						<a class="info_button" href="#none">상세보기 &nbsp; ▷</a>
+						<a class="info_button" href="#none">상세보기 &nbsp; <span><img class="next" src="https://i.imgur.com/LJWCpux.png" alt="img"></span></a>
+						<a class="play_button" href="#none">
 					</div>
 				</div>
 			</div>
@@ -153,19 +154,25 @@
 				</div>
 				<div class="list">
 					<div class="card">
-						<a href="#none"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/33902/16430866115440.jpg" alt="event"></a>
+						<div class="card_wrap">
+							<a href="#none"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/33902/16430866115440.jpg" alt="event"></a>
+						</div>
 						<p class="title">신년 맞이! [CGV 2022 챌린지]</p>
 						<p class="info"> 2022.01.25~2022.02.13</p>
 					</div>
 					<div class="space"></div>
 					<div class="card">
-						<a href="#none"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/33839/16425473374760.jpg" alt="event"></a>
+						<div class="card_wrap">
+							<a href="#none"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/33839/16425473374760.jpg" alt="event"></a>
+						</div>
 						<p class="title">[CGV NFT 플레이 포스터] No.1 킹메…</p>
 						<p class="info"> 2022.01.19~2022.02.27</p>
 					</div>
 					<div class="space"></div>
 					<div class="card">
-						<a href="#none"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/33809/16415341565330.jpg" alt="event"></a>
+						<div class="card_wrap">
+							<a href="#none"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/33809/16415341565330.jpg" alt="event"></a>
+						</div>
 						<p class="title">PEAKERS 클라이밍짐 오픈</p>
 						<p class="info"> 2022.01.07~2022.01.31</p>
 
@@ -216,13 +223,142 @@
 			</div>
 		</section>
 
-		<section class="store"><!--영화관람권/기프트카드/콤보 section-->	
+		<section class="store"><!--영화관람권/기프트카드/콤보 section-->
+			<div class="contents">
+				<div class="head"></div> <!-- 여백 -->
+				<div class="list">
+					<div class="unit">
+						<div class="headline">
+							<span>영화관람권</span>
+							<div class="more_wrap">
+								<a class="more" href="#none">더보기</a>
+							</div>
+						</div>
+						<a href="#none" class="sub">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16094706927780.jpg" alt="CGV 영화관람권">
+							<div class="text">
+								<span>CGV 영화관람권<br><span class="price">11,000원</span></span>
+							</div>
+						</a>
+						<a href="#none" class="sub">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15458911951520.jpg" alt="CGV 골드클래스">
+							<div class="text">
+								<span>CGV 골드클래스<br><span class="price">35,000원</span></span>
+							</div>
+						</a>
+						<a href="#none" class="sub">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16105061088530.jpg" alt="4DX관람권">
+							<div class="text">
+								<span>4DX관람권<br><span class="price">19,000원</span></span>
+							</div>
+						</a>
+					</div>
+					<div class="space"></div><!-- 간격 -->
+					<div class="unit">
+						<div class="headline">
+							<span>기프트카드</span>
+							<div class="more_wrap">
+								<a class="more" href="#none">더보기</a>
+							</div>
+						</div>
+						<a href="#none" class="sub">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15814124358590.jpg" alt="PACONNIE A형">
+							<div class="text">
+								<span>PACONNIE A형<br><span class="price">금액충전형</span></span>
+							</div>
+						</a>
+						<a href="#none" class="sub">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15814158039890.jpg" alt="PACONNIE B형">
+							<div class="text">
+								<span>PACONNIE B형<br><span class="price">금액충전형</span></span>
+							</div>
+						</a>
+						<a href="#none" class="sub">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15814162227570.jpg" alt="PACONNIE C형">
+							<div class="text">
+								<span>PACONNIE C형<br><span class="price">금액충전형</span></span>
+							</div>
+						</a>
+					</div>
+					<div class="space"></div><!-- 간격 -->
+					<div class="unit">
+						<div class="headline">
+							<span>콤보</span>
+							<div class="more_wrap">
+								<a class="more" href="#none">더보기</a>
+							</div>
+						</div>
+						<a href="#none" class="sub">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15463252009160.jpg" alt="CGV 콤보">
+							<div class="text">
+								<span>CGV 콤보<br><span class="price">9,000원</span></span>
+							</div>
+						</a>
+						<a href="#none" class="sub">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15463251537260.jpg" alt="더블 콤보">
+							<div class="text">
+								<span>더블 콤보<br><span class="price">12,000원</span></span>
+							</div>
+						</a>
+						<a href="#none" class="sub">
+							<img src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15464065561050.jpg" alt="스몰세트">
+							<div class="text">
+								<span>스몰세트<br><span class="price">6,500원</span></span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
 		</section>
 
-		<sectoin class="notice"><!--공지사항 section-->		
+		<section class="notice"><!--공지사항 section-->
+			<div class="contents">
+				<div class="head"></div> <!-- 여백 -->
+				<div id="n_info"> <!-- 본문 -->
+					<div id="n_text">
+						<div class="headline">
+							<p class="title">공지사항</p>
+							<a href="#none" class="notice_link">
+								<span class="underline">[기타]22년 VIP 선정 기준 변경 및 추가 기준 관련</span>…
+							</a>
+							<div class="more_wrap">
+								<a class="more" href="#none">더보기</a>
+							</div>
+						</div>
+						<div class="cs_center">
+							<p class="title">고객센터</p>
+							<div class="info">
+								<span class="number">1544-1122<br></span>
+								<span class="black">고객센터 운영시간 (평일 09:00~18:00)</span>
+								<span><br>업무시간 외 자동응답 안내 가능합니다.</span>
+							</div>
+							<div class="tag_wrap">
+								<a href="#none" class="tag">FAQ</a>
+								<a href="#none"class="tag">1:1 문의</a>
+								<a href="#none" class="tag">분실물 문의</a>
+								<a href="#none" class="tag">대관/단체 문의</a>
+							</div>
+						</div>
+					</div>
+					<div id="n_qr">
+						<p class="title">앱 다운로드
+						<span class="app"><br>CGV앱에서 더 편리하게 이용하세요</span></p>
+							<div class="qr_wrap">
+								<img src="https://img.cgv.co.kr/R2014/images/common/img_qrcode.gif" alt="qr code">
+							</div>
+						<span><br>QR코드를 스캔하고<br>앱설치 페이지로 바로 이동하세요</span>
+					</div>
+				</div>
+				<div id="n_ad"> <!-- 광고 -->
+				</div>
+			</div>
 		</section>
-		
 
+		<section id="ad">
+			<div class="ad_wrap">
+				<a href="#none"><img src="https://adimg.cgv.co.kr/images/202111/cgvgift/0119_980x240.png" alt="ad"></a>
+			</div>
+		</section>
 		<footer></footer>
 	</body>
 </html>
