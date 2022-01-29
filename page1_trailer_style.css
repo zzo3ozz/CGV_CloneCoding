@@ -89,7 +89,7 @@ video
 	margin-left: 7px;
 }
 
-.trailer .button
+.trailer .control_button
 {
 	box-sizing: border-box;
 	height: 30px;
@@ -100,7 +100,7 @@ video
 	border: solid 1px #cecece;
 }
 
-.trailer .button img
+.trailer .control_button img
 {
 	height: 15px;
 }
