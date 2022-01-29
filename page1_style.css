@@ -34,7 +34,6 @@
 	width: 100%;
 	font: 700 25px "Noto Sans KR";
 	color: rgb(34, 34, 34);
-/*	border: solid black 1px;*/
 }
 
 .MC_Ex .menu
@@ -207,7 +206,6 @@
 	font: 500 18px "Noto Sans KR";
 	color: rgb(34, 34, 34);
 	margin: 0.5em 0;
-	/*border: solid black 1px;*/
 }
 
 .movie .title
@@ -275,7 +273,6 @@
 	width: 50%;
 	height: 250px;
 	margin-right: 4%;
-/*	border: solid black 1px;*/
 }
 
 #s_photo img
@@ -292,7 +289,6 @@
 	display: inline-block;
 	width: 45%;
 	height: 250px;
-/*	border: solid black 1px;*/
 }
 
 .s_type
@@ -310,7 +306,6 @@
 {
 	display: inline-block;
 	margin: 4% 0 4% 5%;
-/*	border: solid black 1px;*/
 }
 
 .special .tag
@@ -439,7 +434,6 @@
 	height: 20%;
 	padding: 2.5% 0;
 	width: 100%;
-	/*border: solid black 1px;*/
 	border-bottom: solid rgb(244, 244, 244) 1px;
 }
 
