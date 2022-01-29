@@ -3,14 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="author" content="한서영">
-		<meta name="viewport" content="width=1024">
 		<link rel="shortcut icon" type="image/x-icon" href="https://img.cgv.co.kr/theater_img/favicon.ico">
 		<title> 영화 그 이상의 감동. CGV</title>
+		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="trailer_style.css">
 		<link rel="stylesheet" type="text/css" href="main_style.css">
+		<!-- 폰트 -->
 		<link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/webfont.css">
     	<link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/reset.css">
-    	
+    	<!-- 스크립트 -->
+    	<script src="page1_script.js"></script>
 	</head>
 
 	<body>
@@ -21,25 +23,40 @@
 		<section><!--예고편 section-->
 			<div class="trailer">
 				<div class="video_wrap">
-					<video muted autoplay>
-						<source src="https://adimg.cgv.co.kr/images/202201/355/355_1080x608.mp4" type="video/mp4">
+					<div class="video_box">
+						<video muted autoplay>
+							<source src="https://adimg.cgv.co.kr/images/202201/355/355_1080x608.mp4" type="video/mp4">
 							이 브라우저는 Video 태그를 지원하지 않습니다.
-					</video>
-					<div class="trailer_gradient"></div>
-					<div class = "videotext"> <!-- 예고 설명 텍스트 영역-->
-						<span class = movie_title>
-							355<br>
-						</span>
-						<br>
-						<span class = movie_text>
-							월드클래스 에이전트 TEAM 355<br>
-							2월, 그들이 움직인다!
-						</span>
+						</video>
+						<div class="trailer_gradient"></div>
+						<div class="videotext"> <!-- 예고 설명 텍스트 영역-->
+							<span class = movie_title>
+								355<br>
+							</span>
+							<br>
+							<span class = movie_text>
+								월드클래스 에이전트 TEAM 355<br>
+								2월, 그들이 움직인다!
+							</span>
+							<div class="controler"> <!-- 비디오 컨트롤러-->
+								<a class="info_button" href="#none">상세보기 &nbsp; <span><img class="next" src="https://i.imgur.com/lonrRik.png" alt="img"></span></a>
+								<a class="play_button" href="#none">
+									<div class="button">
+										<span><img class="pause" src="https://i.imgur.com/zpalGfn.png" alt="pause"></span>
+									</div>
+								</a>
+								<a class="sound_button" href="#none">
+									<div class="button">
+										<img class="muted" src="https://i.imgur.com/Sodn8Px.png" alt="muted">
+									</div>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="controler"> <!-- 비디오 컨트롤러-->
-						<a class="info_button" href="#none">상세보기 &nbsp; <span><img class="next" src="https://i.imgur.com/LJWCpux.png" alt="img"></span></a>
-						<a class="play_button" href="#none">
-					</div>
+				</div>
+				<div class="float_ad_wrap">
+					<div class="float_ad"></div>
+					<div class="ad_close"></div>
 				</div>
 			</div>
 		</section>
@@ -51,23 +68,36 @@
 						<div class="bar"></div> <!-- 구분선 -->
 						<a class="menu" href="#none">상영예정작</a>
 						<div class="show_all_wrap">
-							<a class="show_all" href="#none">전체보기 &nbsp; <span><img class="next" src="https://i.imgur.com/LJWCpux.png" alt="img"></span></a>
+							<a class="show_all" href="#none">전체보기 &nbsp; <span><img class="next" src="https://i.imgur.com/lonrRik.png" alt="img"></span></a>
 						</div>
 				</div>
 				<div class="moviechart"><!-- 무비차트 div-->
 					<div class="list">
+						<a href="#none" id="pre_button" class="button"><img src="https://i.imgur.com/lonrRik.png" alt="pre"></a>
+						<a href="#none" id="next_button" class="button"><img src="https://i.imgur.com/lonrRik.png" alt="next"></a>
 						<div class="movie"> <!-- 1위-->
 							<div class="poster_wrap"> <!-- 포스터 영역-->
 								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85561/85561_320.jpg" alt="해적-도깨비 깃발">
-								<div class="gradient"></div> <!-- 그라디언트 -->
-								<p class="num"> 1 </p> <!-- 순위 -->
-								<div class="age"> <!-- 관람가 -->
-									<img src="https://img.cgv.co.kr/R2014/images/common/flag/age/grade-12.png" alt="12세 이상세" height="20px">
+								<div class="hover_div">
+									<div class="box_wrap">
+										<a href="#none" class="detail">
+										상세보기
+										</a>
+										<a href="#none" class="booking">
+										예매하기
+										</a>
+									</div>
 								</div>
-								<div class = "screentype"> <!-- 스크린타입 -->
-									<img src="https://img.cgv.co.kr/R2014/images/common/logo/imax_white.png" alt="imax">
-									<br>
-									<img src="https://img.cgv.co.kr/R2014/images/common/logo/forDX_white.png" alt="forDX">
+								<div class="gradient"> <!-- 그라디언트 -->
+									<p class="num"> 1 </p> <!-- 순위 -->
+									<div class="age"> <!-- 관람가 -->
+										<img src="https://img.cgv.co.kr/R2014/images/common/flag/age/grade-12.png" alt="12세 이상세" height="20px">
+									</div>
+									<div class = "screentype"> <!-- 스크린타입 -->
+										<img src="https://img.cgv.co.kr/R2014/images/common/logo/imax_white.png" alt="imax">
+										<br>
+										<img src="https://img.cgv.co.kr/R2014/images/common/logo/forDX_white.png" alt="forDX">
+									</div>
 								</div>
 							</div>
 							<div> <!-- 텍스트 영역-->
@@ -82,8 +112,19 @@
 						<div class="movie"> <!-- 2위-->
 							<div class="poster_wrap"> <!-- 포스터 영역-->
 								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85291/85291_320.jpg" alt="킹메이커">
-								<div class="gradient"></div> <!-- 그라디언트 -->
-								<p class="num"> 2 </p> <!-- 순위 -->
+								<div class="hover_div">
+									<div class="box_wrap">
+										<a href="#none" class="detail">
+										상세보기
+										</a>
+										<a href="#none" class="booking">
+										예매하기
+										</a>
+									</div>
+								</div>
+								<div class="gradient"> <!-- 그라디언트 -->
+									<p class="num"> 2 </p> <!-- 순위 -->
+								</div>
 							</div>
 							<div> <!-- 텍스트 영역-->
 								<p class="title">킹메이커</p>
@@ -97,8 +138,19 @@
 						<div class="movie"> <!-- 3위-->
 							<div class="poster_wrap"> <!-- 포스터 영역-->
 								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85291/85291_320.jpg" alt="킹메이커">
-								<div class="gradient"></div> <!-- 그라디언트 -->
-								<p class="num"> 3 </p> <!-- 순위 -->
+								<div class="hover_div">
+									<div class="box_wrap">
+										<a href="#none" class="detail">
+										상세보기
+										</a>
+										<a href="#none" class="booking">
+										예매하기
+										</a>
+									</div>
+								</div>
+								<div class="gradient"> <!-- 그라디언트 -->
+									<p class="num"> 3 </p> <!-- 순위 -->
+								</div>
 							</div>
 							<div> <!-- 텍스트 영역-->
 								<p class="title">킹메이커</p>
@@ -112,8 +164,19 @@
 						<div class="movie"> <!-- 4위-->
 							<div class="poster_wrap"> <!-- 포스터 영역-->
 								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85291/85291_320.jpg" alt="킹메이커">
-								<div class="gradient"></div> <!-- 그라디언트 -->
-								<p class="num"> 4 </p> <!-- 순위 -->
+								<div class="hover_div">
+									<div class="box_wrap">
+										<a href="#none" class="detail">
+										상세보기
+										</a>
+										<a href="#none" class="booking">
+										예매하기
+										</a>
+									</div>
+								</div>
+								<div class="gradient"> <!-- 그라디언트 -->
+									<p class="num"> 4 </p> <!-- 순위 -->
+								</div>
 							</div>
 							<div> <!-- 텍스트 영역-->
 								<p class="title">킹메이커</p>
@@ -127,8 +190,19 @@
 						<div class="movie"> <!-- 5위-->
 							<div class="poster_wrap"> <!-- 포스터 영역-->
 								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85291/85291_320.jpg" alt="킹메이커">
-								<div class="gradient"></div> <!-- 그라디언트 -->
-								<p class="num"> 5 </p> <!-- 순위 -->
+								<div class="hover_div">
+									<div class="box_wrap">
+										<a href="#none" class="detail">
+										상세보기
+										</a>
+										<a href="#none" class="booking">
+										예매하기
+										</a>
+									</div>
+								</div>
+								<div class="gradient"> <!-- 그라디언트 -->
+									<p class="num"> 5 </p> <!-- 순위 -->
+								</div>
 							</div>
 							<div> <!-- 텍스트 영역-->
 								<p class="title">킹메이커</p>
@@ -149,12 +223,14 @@
 		<section class="EVENT"><!--EVENT section -->
 			<div class="contents">
 				<div class="head">
-					<span> EVENT</span>
+					<span>EVENT</span>
 					<div class="show_all_wrap">
-							<a class="show_all" href="#none">전체보기 &nbsp; <span><img class="next" src="https://i.imgur.com/LJWCpux.png" alt="img"></span></a>
+							<a class="show_all" href="#none">전체보기 &nbsp; <span><img class="next" src="https://i.imgur.com/lonrRik.png" alt="img"></span></a>
 					</div>
 				</div>
 				<div class="list">
+					<a href="#none" id="pre_button" class="button"><img src="https://i.imgur.com/lonrRik.png" alt="pre"></a>
+					<a href="#none" id="next_button" class="button"><img src="https://i.imgur.com/lonrRik.png" alt="next"></a>
 					<div class="card">
 						<div class="card_wrap">
 							<a href="#none"><img src="https://img.cgv.co.kr/WebApp/contents/eventV4/33902/16430866115440.jpg" alt="event"></a>
@@ -188,7 +264,7 @@
 				<div class="head">
 					<span> 특별관</span>
 					<div class="show_all_wrap">
-							<a class="show_all" href="#none">전체보기 &nbsp; <span><img class="next" src="https://i.imgur.com/LJWCpux.png" alt="img"></span></a>
+							<a class="show_all" href="#none">전체보기 &nbsp; <span><img class="next" src="https://i.imgur.com/lonrRik.png" alt="img"></span></a>
 					</div>
 				</div>
 				<div class="list">

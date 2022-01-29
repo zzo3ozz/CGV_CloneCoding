@@ -1,9 +1,10 @@
 .trailer
 {
-	positon: relateive;
+	position: relative;
 	background-color: black;
-	width: 100%;
+	height: 500px;
 	text-align: center;
+	min-width: 980px;
 }
 
 .videotext
@@ -16,31 +17,42 @@
 	text-align: left;
 }
 
-video
-{
-	height: 100%;
-	width: 100%;
-	transform:scale(1.35);
-}
-
 .video_wrap
 {
 	display: inline-block;
 	height: 500px;
-	width: 70%;
+	width: 980px;
 	position: relative;
 	overflow: hidden;
-	margin: 0 15%;
 }
 
-.video_wrap > .trailer_gradient
+.video_wrap .video_box
 {
-	height: 100%;
-	width: 100%;
+	display: inline-block;
+	position: relative;
+	height: 500px;
+	width: 950px;
+	overflow: hidden;
+}
+
+video
+{
+	display: inline-block;
+	height: 500px;
+	width: 950px;
+	transform:scale(1.35);
+}
+
+.video_wrap .trailer_gradient
+{
+	height: 500px;
+	width: 950px;
 	position: absolute;
 	top: 0;
+	left: 0;
 	background-image: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.25) 75%, #000 100%);
 	z-index: 3;
+	border: solid black 1px;
 }
 
 .trailer .movie_title
@@ -54,17 +66,66 @@ video
 	font: 500 20px "Noto Sans KR";
 }
 
-.controler
+.trailer .controler
 {
-	z-index: 5;
-	position: absolute;
-	top: 70%;
+	margin-top: 20px;
 }
+
 .info_button
 {
 	display: inline-block;
 	color: rgb(52, 52, 52);
 	background-color: rgb(206, 206, 206);
 	border-radius: 15px;
-	padding: 0.5em 0.8em 0.5em 1.3em;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 0.3em 0 1.3em;
+}
+
+.trailer .play_button, .trailer .sound_button
+{
+	display: inline-block;
+	border-radius: 15px;
+	margin-left: 7px;
+}
+
+.trailer .button
+{
+	box-sizing: border-box;
+	height: 30px;
+	width: 30px;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 15px;
+	border: solid 1px #cecece;
+}
+
+.trailer .button img
+{
+	height: 15px;
+}
+
+.trailer .float_ad_wrap
+{
+	position: absolute;
+	z-index: 10;
+	width: 280px;
+	bottom: 20px;
+	right: 20px;
+}
+
+.trailer .float_ad_wrap .float_ad
+{
+	display: block;
+	height: 210px;
+	width: 280px;
+	background-color: white;
+}
+
+.trailer .float_ad_wrap .ad_close
+{
+	display: block;
+	width: 280px;
+	height: 35px;
+	background-color: rgb(81, 81, 81);
 }
