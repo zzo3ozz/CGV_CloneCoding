@@ -129,3 +129,15 @@ video
 	height: 35px;
 	background-color: rgb(81, 81, 81);
 }
+
+.control_button #play
+{
+	display: none;
+	transform: scale(1.5);
+	margin-left: 3px;
+}
+
+.sound_button #unmuted
+{
+	display: none;
+}

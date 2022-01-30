@@ -12,7 +12,7 @@
 		<link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/webfont.css">
     	<link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/reset.css">
     	<!-- 스크립트 -->
-    	<script src="page1_script.js"></script>
+    	<script src="page1_script.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -24,7 +24,7 @@
 			<div class="trailer">
 				<div class="video_wrap">
 					<div class="video_box">
-						<video muted autoplay>
+						<video id="trailer_video" muted autoplay>
 							<source src="https://adimg.cgv.co.kr/images/202201/355/355_1080x608.mp4" type="video/mp4">
 							이 브라우저는 Video 태그를 지원하지 않습니다.
 						</video>
@@ -40,14 +40,16 @@
 							</span>
 							<div class="controler"> <!-- 비디오 컨트롤러-->
 								<a class="info_button" href="#none">상세보기 &nbsp; <span><img class="next" src="https://i.imgur.com/lonrRik.png" alt="img"></span></a>
-								<a class="play_button" href="#none">
+								<a class="play_button" href="javascript:void(0)">
 									<div class="control_button">
-										<span><img class="pause" src="https://i.imgur.com/zpalGfn.png" alt="pause"></span>
+										<span><img id="pause" src="https://i.imgur.com/zpalGfn.png" alt="pause"  onclick="v_pause();"></span>
+										<span><img id="play" src="https://i.imgur.com/r41PK6o.png" alt="play" onclick="v_play()"></span>
 									</div>
 								</a>
-								<a class="sound_button" href="#none">
+								<a class="sound_button" href="javascript:void(0)">
 									<div class="control_button">
-										<img class="muted" src="https://i.imgur.com/Sodn8Px.png" alt="muted">
+										<img id="muted" src="https://i.imgur.com/Sodn8Px.png" alt="muted"  onclick="v_muted();">
+										<img id="unmuted" src="https://i.imgur.com/cxUaRYo.png" alt="muted"  onclick="v_unmuted();">
 									</div>
 								</a>
 							</div>
@@ -72,9 +74,10 @@
 						</div>
 				</div>
 				<div class="moviechart"><!-- 무비차트 div-->
+					<a href="#none" id="pre_button" class="button"><img src="https://i.imgur.com/lonrRik.png" alt="pre"></a>
+					<a href="#none" id="next_button" class="button"><img src="https://i.imgur.com/lonrRik.png" alt="next"></a>
 					<div class="list">
-						<a href="#none" id="pre_button" class="button"><img src="https://i.imgur.com/lonrRik.png" alt="pre"></a>
-						<a href="#none" id="next_button" class="button"><img src="https://i.imgur.com/lonrRik.png" alt="next"></a>
+						
 						<div class="movie"> <!-- 1위-->
 							<div class="poster_wrap"> <!-- 포스터 영역-->
 								<img class="poster" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000085/85561/85561_320.jpg" alt="해적-도깨비 깃발">
