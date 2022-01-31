@@ -1,4 +1,3 @@
-
 function v_pause()
 {
 	var pause_button = document.getElementById("pause");
@@ -46,7 +45,7 @@ var m_now_position=0;
 function next_m(a)
 {
 	var slide = document.getElementById("slide_list_mc");
-	slide.style.transition = "0.5s";
+	slide.style.transition = "0.3s";
 	if(m_now_position == 968*2)
 	{
 		a.style.display = "none";
@@ -63,7 +62,7 @@ function next_m(a)
 function pre_m()
 {
 	var slide = document.getElementById("slide_list_mc");
-	slide.style.transition = "0.5s";
+	slide.style.transition = "0.3s";
 	if(m_now_position != 968*2)
 	{
 		var next_button = document.getElementById("next_button_m");
@@ -83,7 +82,7 @@ var e_now_position=0;
 function next_ex()
 {
 	var slide = document.getElementById("slide_list_ex");
-	slide.style.transition = "0.5s";
+	slide.style.transition = "0.3s";
 	if(e_now_position == 968*2)
 	{
 		var next_button = document.getElementById("next_button_ex");
@@ -101,7 +100,7 @@ function next_ex()
 function pre_ex()
 {
 	var slide = document.getElementById("slide_list_ex");
-	slide.style.transition = "0.5s";
+	slide.style.transition = "0.3s";
 	if(e_now_position != 968*2)
 	{
 		var next_button = document.getElementById("next_button_ex");
@@ -141,3 +140,4 @@ function font_weight_ex(a)
 	var d = document.getElementById("moviechart");
 	d.style.display = "none";
 }
+
