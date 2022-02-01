@@ -34,3 +34,9 @@ function bot_ad_play()
 	ad_pause_button.style.display = "inline-block";
 	timer_ad = setInterval(function(){next_ad();}, 3000);
 }
+
+function ad_close()
+{
+	var float_ad = document.getElementById("top_float_ad");
+	float_ad.style.display = "none";
+}

@@ -140,4 +140,3 @@ function font_weight_ex(a)
 	var d = document.getElementById("moviechart");
 	d.style.display = "none";
 }
-

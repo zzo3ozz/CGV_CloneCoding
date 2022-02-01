@@ -105,16 +105,19 @@ video
 	height: 15px;
 }
 
-.trailer .float_ad_wrap
+.float_ad_wrap
 {
 	position: absolute;
 	z-index: 10;
 	width: 280px;
-	bottom: 20px;
+	height: 245px;
+	top: 230px;
 	right: 20px;
+	display: block;
 }
 
-.trailer .float_ad_wrap .float_ad
+
+.float_ad_wrap .float_ad
 {
 	display: block;
 	height: 210px;
@@ -122,12 +125,34 @@ video
 	background-color: white;
 }
 
-.trailer .float_ad_wrap .ad_close
+.float_ad img
+{
+	display: inline;
+	height: 210px;
+	
+}
+
+.float_ad_wrap .ad_close
 {
 	display: block;
 	width: 280px;
 	height: 35px;
+	box-sizing: border-box;
 	background-color: rgb(81, 81, 81);
+	line-height: 35px;
+	color: white;
+	font-size: 12px;
+	padding: 0 7px 0 3px;
+}
+
+.ad_close p
+{
+	display: inline-block;
+}
+
+.ad_close #close
+{
+	float: right;	
 }
 
 .control_button #play
@@ -138,6 +163,11 @@ video
 }
 
 .sound_button #unmuted
+{
+	display: none;
+}
+
+#pre_button
 {
 	display: none;
 }
