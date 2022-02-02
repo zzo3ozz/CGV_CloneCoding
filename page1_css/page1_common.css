@@ -1,0 +1,225 @@
+.contents
+{
+	display: inline-block;
+	width: 980px;
+	text-align: left;
+}
+
+.EVENT, .special, .store, .notice
+{
+	text-align: center;
+	min-width: 980px;
+}
+
+.MC_Ex
+{
+	text-align: center;
+	background-color: rgb(246, 246, 246);
+	min-width: 980px;
+}
+
+.space
+{
+	display: inline-block;
+}
+
+.list
+{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+.bar
+{
+	border-right: solid rgb(178, 178, 178) 1px;
+	height: 13px;
+	display: inline-block;
+	margin: 0 10px 4px 10px;
+}
+
+.button_wrap
+{
+	float: right;
+	display: inline-block;
+}
+
+
+.show_all_wrap
+{
+	display: inline-block;
+	float: right;
+}
+.show_all
+{
+	padding: 0.3em 0 0.3em 1em;
+	color: black;
+	border-radius: 15px;
+	border: solid rgb(178, 178, 178) 1px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.next
+{
+	height: 15px;
+	filter: opacity(1) drop-shadow(0 0 0 black);
+	margin-bottom: 0.2em;
+	margin-right: 0.3em;
+}
+
+.event_button
+{
+	box-sizing: border-box;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	border: solid rgb(178, 178, 178) 1px;
+	margin-right: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.event_button img
+{
+	height: 14px;
+	margin: 0 0 2px 0px;
+}
+
+#event_play
+{
+	display: none;
+	padding-left: 2px;
+}
+
+.head
+{
+	margin: 8% 0 2% 0;
+	display: inline-block;
+	width: 100%;
+	font: 700 25px "Noto Sans KR";
+	color: rgb(34, 34, 34);
+}
+
+.more_wrap
+{
+	display: inline-block;
+	float: right;
+}
+
+.more
+{
+	position: relative;
+	bottom: 0.2em;
+	color: #666;
+	font: 400 12px "Noto Sans KR";
+	border: solid rgb(244, 244, 244) 1px;
+	border-radius: 15px;
+	padding: 0.2em 1.3em;
+}
+
+.title
+{
+	font: 500 18px "Noto Sans KR";
+	color: rgb(34, 34, 34);
+	margin: 0.5em 0;
+}
+
+.info
+{
+	font-size: 14px;
+}
+
+#float
+{
+	position: fixed;
+	bottom: 80px;
+	right: 0;
+	z-index: 10;
+}
+
+#goto_top img
+{
+	height: 21px;
+}
+
+#goto_top .top_wrap
+{
+	text-align: center;
+	box-sizing: border-box;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	border: solid black 1px;
+	background-color: rgba(255, 255, 255, 1.0);
+	line-height: 45px;
+	box-shadow:1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+#goto_top
+{
+	float: right;
+	opacity: 0;
+}
+
+#goto_book
+{
+	display: inline-block;
+	text-align: center;
+	transform: translateX(30px);
+}
+
+#goto_book .book_wrap
+{
+	display: inline-block;
+	text-align: center;
+	height: 50px;
+	width: 130px;
+	border-radius: 50px;
+	background-image:linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+	color: white;
+	font: 500 16px "Noto Sans KR";
+	line-height: 50px;
+	box-shadow:1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+#goto_top, #goto_book
+{
+	visibility: hidden;
+}
+
+.button
+{
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	box-shadow:1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+	z-index: 6;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	transform: translate(-50%,-50%);
+}
+
+
+
+#pre_button_m, #pre_button_ex
+{
+	display: none;
+}
+
+#ad
+{
+	margin-top: 120px;
+}
+
+#ad .ad_wrap
+{
+	text-align: center;
+	background-image: linear-gradient(to top, rgba(254, 164, 67, 1.0) 75.5%, rgba(255,255,255,1) 24.5%) ;
+}
