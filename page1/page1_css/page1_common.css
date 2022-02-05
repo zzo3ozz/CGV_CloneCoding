@@ -134,7 +134,7 @@
 {
 	position: fixed;
 	bottom: 80px;
-	right: 0;
+	right: 10%;
 	z-index: 10;
 }
 
@@ -205,8 +205,6 @@
 	background-color: rgba(255, 255, 255, 0.5);
 	transform: translate(-50%,-50%);
 }
-
-
 
 #pre_button_m, #pre_button_ex
 {
