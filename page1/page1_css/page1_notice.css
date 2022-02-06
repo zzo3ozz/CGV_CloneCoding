@@ -36,6 +36,7 @@
 .notice .headline
 {
 	display: block;
+	position: relative;
 	height: 20%;
 	padding: 2.5% 0;
 	width: 100%;
@@ -51,7 +52,9 @@
 
 .notice .notice_link
 {
-	display: inline;
+	position: absolute;
+	top: 25px;
+	display: inline-block;
 	color: rgb(34, 34, 34);
 	font-size: 14px;
 }
