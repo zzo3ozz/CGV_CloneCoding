@@ -11,6 +11,7 @@ function focus_sc(a)
 	first.style.borderRadius = "0";
 	first.style.border = "0";
 	first.style.borderTop = "solid rgb(229, 229, 229) 1px";
+	first.style.borderBottom = "solid rgb(229, 229, 229) 1px";
 	a.style.border = "solid rgb(34, 34, 34) 1px";
 	a.style.borderRadius = "10px";
 	var img = document.getElementById("cinema_img");
@@ -30,6 +31,7 @@ function focus_sb(a)
 	first.style.borderRadius = "0";
 	first.style.border = "0";
 	first.style.borderTop = "solid rgb(229, 229, 229) 1px";
+	first.style.borderBottom = "solid rgb(229, 229, 229) 1px";
 	a.style.border = "solid rgb(34, 34, 34) 1px";
 	a.style.borderRadius = "10px";
 	var img = document.getElementById("cinema_img");
@@ -49,6 +51,7 @@ function focus_4dx(a)
 	first.style.borderRadius = "0";
 	first.style.border = "0";
 	first.style.borderTop = "solid rgb(229, 229, 229) 1px";
+	first.style.borderBottom = "solid rgb(229, 229, 229) 1px";
 	a.style.border = "solid rgb(34, 34, 34) 1px";
 	a.style.borderRadius = "10px";
 	var img = document.getElementById("cinema_img");
@@ -68,6 +71,7 @@ function focus_cdc(a)
 	first.style.borderRadius = "0";
 	first.style.border = "0";
 	first.style.borderTop = "solid rgb(229, 229, 229) 1px";
+	first.style.borderBottom = "solid rgb(229, 229, 229) 1px";
 	a.style.border = "solid rgb(34, 34, 34) 1px";
 	a.style.borderRadius = "10px";
 	var img = document.getElementById("cinema_img");
